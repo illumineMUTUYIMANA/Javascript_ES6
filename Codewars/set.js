@@ -1,4 +1,7 @@
 // let names = new Set(['illuminee', 'mutuyimana', 'ange','rukamba']);
+// console.log(typeof(names));
+// console.log(names.entries());
+
 // names.add('mukayi');
 // console.log(names.has('illuminee'))
 // console.log(names);
@@ -41,12 +44,12 @@
 
 
 
-function max(xx){
-  if (typeof(xx)==='string'){
-    xx = xx.split('');
-
+function max(...xx){
+  let arr = [...xx];
+  for(let el of arr){
+    arr.push(el);
   }
-  let sorted = xx.sort((a,b)=>a-b);
+  let sorted = arr.sort((a,b)=>a-b);
   max = sorted.pop();
   
   return max;

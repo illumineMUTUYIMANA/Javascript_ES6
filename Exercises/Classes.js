@@ -1,3 +1,20 @@
+function* createSundae() {
+    const toppings = [];
+    
+    toppings.push(yield);
+    toppings.push(yield);
+    toppings.push(yield);
+    
+    return toppings;
+}
+
+var it = createSundae();
+it.next('hot fudge');
+console.log(it.next('sprinkles'));
+it.next('whipped cream');
+console.log(it.next());
+
+
 // class person{
 //   constructor(name,byear,id){
 //     this.name = name;
@@ -53,6 +70,9 @@ console.log(c1.out1());
 // console.log(games);
 //console.log(p1.hasOwnProperty(out()));
 console.log(p1.hasOwnProperty('name'));
+
+
+
 
 
 
