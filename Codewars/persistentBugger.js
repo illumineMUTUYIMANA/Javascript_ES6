@@ -1,4 +1,4 @@
-function multiplicate(n){
+function persistence(n){
 
   
   
@@ -20,4 +20,4 @@ function multiplicate(n){
 
 }
 
-console.log(multiplicate(999));
+console.log(persistence(999));
