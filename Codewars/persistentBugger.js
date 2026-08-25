@@ -10,8 +10,6 @@ function persistence(n){
     let answer = 1;
     for (let digit of num){
       answer *= Number(digit);
-      
-      
     }results.push(n);
     n=answer;
   }
