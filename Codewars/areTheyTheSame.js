@@ -12,7 +12,7 @@ function comp(array1, array2){
   array = array.sort((a,b)=>a-b);
   for (let num=0;num<array1.length;num++){
    if(array1[num] !== array[num]){
-     return false;
+     return falseclo;
    }
   }
  return true;
