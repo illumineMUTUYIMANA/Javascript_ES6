@@ -10,15 +10,15 @@ function rot13(message){
     let newIndex =small.indexOf(arrMessage[i])+13;
     let newIndexes = capital.indexOf(message[i])+13;
 
-    if(small.includes(message[i])&& newIndex<=26){
+    if(small.includes(message[i])&& newIndex<26){
       // newIndex = (small.indexOf(message[i]))+13;
       word.push(small[newIndex]);
-    }else if(small.includes(message[i])&& newIndex>26){
+    }else if(small.includes(message[i])&& newIndex>=26){
       newIndex=newIndex-26;
       word.push(small[newIndex]);
-    }else if(capital.includes(message[i])&& newIndexes<=26){
+    }else if(capital.includes(message[i])&& newIndexes<26){
       word.push(capital[newIndexes]);
-    }else if(capital.includes(message[i])&& newIndexes>26){
+    }else if(capital.includes(message[i])&& newIndexes>=26){
       newIndexes = newIndexes-26;
       word.push(capital[newIndexes]);
     }else{
@@ -28,4 +28,4 @@ function rot13(message){
   }
   return word.join('');
 }
-console.log(rot13('Te!staA'));//grfg
+console.log(rot13('Te!sktaAMN^*H(*(&%^Maddjuias'));//grfg
